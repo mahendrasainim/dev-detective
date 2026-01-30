@@ -1,27 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dev Detective</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="container">
-    <h1><img src="download.png" alt="" width="40" height="30"/> Dev Detective</h1>
+<div class="container">
 
-    <form id="searchForm">
-      <input type="text" id="usernameInput" placeholder="Enter GitHub username..." required />
-      <button type="submit">Search</button>
-    </form>
+  <h1> <img src="download.png" alt="" width="40" /> Dev Detective</h1>
 
-    <p id="loading" class="hidden">Loading...</p>
-    <p id="error" class="error hidden">User Not Found </p>
-
-    <div id="profile" class="profile hidden"></div>
+  <!-- Toggle Buttons -->
+  <div class="toggle">
+    <button id="searchBtn" class="active">Search</button>
+    <button id="battleBtn">Battle</button>
   </div>
 
-  <script src="script.js"></script>
+  <!-- Search Mode -->
+  <form id="searchForm">
+    <input type="text" id="searchInput" placeholder="GitHub Username" required>
+    <button>Search</button>
+  </form>
+
+  <!-- Battle Mode -->
+   <div>
+  <form id="battleForm" class="hidden">
+    <input type="text" id="user1" placeholder="Player 1" required>
+    <input type="text" id="user2" placeholder="Player 2" required>
+    <button>Battle </button>
+  </form>
+  </div>
+
+  <!-- Status -->
+  <p id="loading" class="hidden">Loading...</p>
+  <p id="error" class="hidden error">User Not Found </p>
+
+  <!-- Result -->
+  <div id="result"></div>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>

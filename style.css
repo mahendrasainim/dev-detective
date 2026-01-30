@@ -1,86 +1,105 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial;
 }
 
-body {
-  background: #0d1117;
-  color: #fff;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+body{
+  background:#0d1117;
+  color:white;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  
 }
 
-.container {
-  width: 400px;
-  background: #161b22;
-  padding: 20px;
-  border-radius: 10px;
+.container{
+  width:450px;
+  background:#161b22;
+  padding:20px;
+  border-radius:10px;
 }
 
-h1 {
-  text-align: center;
-  margin-bottom: 20px;
+/* Heading */
+h1{
+  text-align:center;
+  margin-bottom:15px;
 }
 
-form {
-  display: flex;
-  gap: 10px;
+/* Toggle */
+.toggle{
+  display:flex;
+  margin-bottom:15px;
 }
 
-input {
-  flex: 1;
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
+.toggle button{
+  flex:1;
+  padding:8px;
+  border:none;
+  background:#21262d;
+  color:white;
+  cursor:pointer;
 }
 
-button {
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  background: #238636;
-  color: white;
-  cursor: pointer;
+.toggle .active{
+  background:#238636;
 }
 
-button:hover {
-  background: #2ea043;
+/* Forms */
+form{
+  display:flex;
+  gap:8px;
+  margin-bottom:10px;
 }
 
-.profile {
-  margin-top: 20px;
-  background: #0d1117;
-  padding: 15px;
-  border-radius: 10px;
+input{
+  flex:1;
+  padding:8px;
+  border:none;
+  border-radius:5px;
 }
 
-.profile img {
-  width: 100px;
-  border-radius: 50%;
+button{
+  background:#238636;
+  color:white;
+  border:none;
+  padding:8px;
+  border-radius:5px;
+  cursor:pointer;
 }
 
-.profile a {
-  color: #58a6ff;
-  text-decoration: none;
+/* Card */
+.card{
+  background:#0d1117;
+  padding:15px;
+  border-radius:8px;
+  margin-top:10px;
+  text-align:center;
 }
 
-.repo {
-  margin-top: 10px;
-  padding: 8px;
-  background: #161b22;
-  border-radius: 5px;
+.card img{
+  width:80px;
+  border-radius:50%;
 }
 
-.hidden {
-  display: none;
+/* Winner / Loser */
+.winner{
+  border:2px solid green;
 }
 
-.error {
-  color: red;
-  margin-top: 10px;
-  text-align: center;
+.loser{
+  border:2px solid red;
+}
+
+/* Utils */
+.hidden{
+  
+  display:none;
+}
+
+.error{
+  color:red;
+  text-align:center;
 }
