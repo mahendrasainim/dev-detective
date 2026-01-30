@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dev Detective</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1><img src="download.png" alt="" width="40" height="30"/> Dev Detective</h1>
+
+    <form id="searchForm">
+      <input type="text" id="usernameInput" placeholder="Enter GitHub username..." required />
+      <button type="submit">Search</button>
+    </form>
+
+    <p id="loading" class="hidden">Loading...</p>
+    <p id="error" class="error hidden">User Not Found </p>
+
+    <div id="profile" class="profile hidden"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
